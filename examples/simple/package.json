@@ -1,7 +1,7 @@
 {
-  "name": "parcel-sandbox",
-  "version": "1.0.0",
-  "description": "Simple Parcel Sandbox",
+  "name": "toio-webble-examples-simple",
+  "version": "0.1.0",
+  "description": "An example of simple app with toio-webble",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html",
