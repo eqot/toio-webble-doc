@@ -15,6 +15,10 @@
       "doc3": {
         "title": "This is document number 3"
       },
+      "example1": {
+        "title": "Example 1",
+        "sidebar_label": "Example Page"
+      },
       "doc4": {
         "title": "Other Document"
       },
@@ -25,6 +29,7 @@
     "links": {
       "Docs": "Docs",
       "API": "API",
+      "Examples": "Examples",
       "Help": "Help",
       "Blog": "Blog"
     },

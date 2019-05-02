@@ -16,9 +16,9 @@ const users = [
     // if it is not '/', like: '/test-site/img/image.jpg'.
     image: '/img/undraw_open_source.svg',
     infoLink: 'https://www.facebook.com',
-    pinned: true,
-  },
-];
+    pinned: true
+  }
+]
 
 const siteConfig = {
   title: 'Test Site', // Title for your website.
@@ -38,10 +38,11 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
-    {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
+    { doc: 'doc1', label: 'Docs' },
+    { doc: 'doc4', label: 'API' },
+    { doc: 'example1', label: 'Examples' },
+    { page: 'help', label: 'Help' },
+    { blog: true, label: 'Blog' }
   ],
 
   // If you have users set above, you add it here:
@@ -55,7 +56,7 @@ const siteConfig = {
   /* Colors for website */
   colors: {
     primaryColor: '#09a308',
-    secondaryColor: '#067205',
+    secondaryColor: '#067205'
   },
 
   /* Custom fonts for website */
@@ -77,7 +78,7 @@ const siteConfig = {
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
-    theme: 'default',
+    theme: 'default'
   },
 
   // Add custom scripts here that would be placed in <script> tags.
@@ -90,7 +91,7 @@ const siteConfig = {
 
   // Open Graph and Twitter card images.
   ogImage: 'img/undraw_online.svg',
-  twitterImage: 'img/undraw_tweetstorm.svg',
+  twitterImage: 'img/undraw_tweetstorm.svg'
 
   // Show documentation's last contributor's name.
   // enableUpdateBy: true,
@@ -101,6 +102,6 @@ const siteConfig = {
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
   //   repoUrl: 'https://github.com/facebook/test-site',
-};
+}
 
-module.exports = siteConfig;
+module.exports = siteConfig
