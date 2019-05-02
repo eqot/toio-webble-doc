@@ -1,0 +1,34 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Example 1 · toio-webble</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;Check the &lt;a href=&quot;https://docusaurus.io&quot;&gt;documentation&lt;/a&gt; for how to use Docusaurus.&lt;/p&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Example 1 · toio-webble"/><meta property="og:type" content="website"/><meta property="og:url" content="https://eqot.github.io/toio-webble-doc/"/><meta property="og:description" content="&lt;p&gt;Check the &lt;a href=&quot;https://docusaurus.io&quot;&gt;documentation&lt;/a&gt; for how to use Docusaurus.&lt;/p&gt;
+"/><meta property="og:image" content="https://eqot.github.io/toio-webble-doc/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://eqot.github.io/toio-webble-doc/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/toio-webble-doc/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://eqot.github.io/toio-webble-doc/blog/atom.xml" title="toio-webble Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://eqot.github.io/toio-webble-doc/blog/feed.xml" title="toio-webble Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/toio-webble-doc/css/main.css"/><script src="/toio-webble-doc/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/toio-webble-doc/"><img class="logo" src="/toio-webble-doc/img/favicon.ico" alt="toio-webble"/><h2 class="headerTitleWithLogo">toio-webble</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/toio-webble-doc/docs/doc1" target="_self">Docs</a></li><li class=""><a href="/toio-webble-doc/docs/doc4" target="_self">API</a></li><li class="siteNavItemActive"><a href="/toio-webble-doc/docs/example1" target="_self">Examples</a></li><li class=""><a href="/toio-webble-doc/help" target="_self">Help</a></li><li class=""><a href="/toio-webble-doc/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Example 1</h1></header><article><div><span><p>Check the <a href="https://docusaurus.io">documentation</a> for how to use Docusaurus.</p>
+<button id="discover">Discover</button>
+<button id="forward">Forward</button>
+<button id="backward">Backward</button>
+<script src="https://cdn.jsdelivr.net/npm/toio-webble@0.1.2/dist/coreCube.min.js"></script>
+<script>
+  window.addEventListener("message", async function (event) {
+    if (event.data === 'discover') {
+      const Cube = window.Cube;
+      cube = await Cube.discover();
+      console.log('connected');
+    }
+    if (event.data === 'forward') {
+      cube.move([70, 70], 500);
+    }
+    if (event.data === 'backward') {
+      cube.move([-70, -70], 500);
+    }
+  }, false);
+  document.querySelector('#discover').addEventListener('click', () => {
+    CoreCube.discover().then(cube => {
+      document.querySelector('#forward').addEventListener('click', () => {
+        cube.move([70, 70], 500)
+      })
+      document.querySelector('#backward').addEventListener('click', () => {
+        cube.move([-70, -70], 500)
+      })
+    })
+  })
+</script>
+<iframe src="https://codesandbox.io/embed/github/eqot/toio-webble-doc/tree/master/examples/simple?fontsize=14&module=%2Fsrc%2Findex.js" title="toio-webble-examples-simple" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/toio-webble-doc/" class="nav-home"><img src="/toio-webble-doc/img/favicon.ico" alt="toio-webble" width="66" height="58"/></a><div><h5>Docs</h5><a href="/toio-webble-doc/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/toio-webble-doc/docs/en/doc2.html">Guides (or other categories)</a><a href="/toio-webble-doc/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/toio-webble-doc/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/toio-webble-doc/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/toio-webble-doc/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 Your Name or Your Company Name</section></footer></div></body></html>
